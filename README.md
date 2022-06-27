@@ -17,9 +17,9 @@ To predict the rate of the fuel based on the following criteria: - Client Locati
 4. Run the Project through IIS Express.
     
 ### Points to be noted
-The Models folder contains all the classes and the requirements for the attributes in the classes. The controller contains all the routing for the views and Views contain all the cshtml pages.
-
-We have included some dummy records to display in the Get Quote Price and Quote History web pages.
+* The Models folder contains all the classes and the requirements for the attributes in the classes. The controller contains all the routing for the views and Views contain all the cshtml pages.
+* We have included some dummy records to display in the Get Quote Price and Quote History web pages.
+*  _Layout.cshtml in Views/Shared is the layout page which is shared by all the web pages in Views
 
 
 ### Screenshots
