@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Apoorva\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Apoorva\\.nuget\\packages"
+    ]
+  }
+}
