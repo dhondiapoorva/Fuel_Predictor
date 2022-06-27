@@ -1,0 +1,83 @@
+﻿@model FuelQuoteApp_p1.Models.Quote.FQuote
+
+@{
+    ViewData["Title"] = "GetQuote";
+}
+<style>
+#getprice
+{
+     border-radius: 20px;
+    /* color: #DA252A; */
+    background-color: #DA252A;
+    border-color: #DA252A;
+}
+#update
+{
+     border-radius: 20px;
+    /* color: #DA252A; */
+    background-color: #DA252A;
+    border-color: #DA252A;
+}
+#names
+{
+    color: #4d709e;
+    font-family: futura;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+#titlequote
+{
+font-family:futura;
+font-weight:bold;
+font-size:50px;
+color:#DA252A;
+}
+</style>
+
+<h2 id="titlequote">Get Quote</h2>
+
+<div class="col-md-6">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            
+        </div>
+        <div class="panel-body">
+            <form role="form" asp-action="GetQuote" asp-controller="Quote" method="post">
+                <div id="names">Gallons Requested</div>
+                <div class="form-group">
+                    <input asp-for="GallonsRequested" class="form-control input-sm" placeholder="Gallons Requested">
+                    <span asp-validation-for="GallonsRequested" class="text-danger"></span>
+                </div>
+                 <div id="names">Delivery Address</div>
+                <div class="form-group">
+                    <input asp-for="DeliveryAddress" class="form-control input-sm" readonly>
+                </div>
+                <div id="names">Delivery Date</div>
+                <div class="form-group">
+                    <input asp-for="DateRequested" type="date" asp-format="{0:yyyy-MM-dd}" class="form-control" />
+                    <span asp-validation-for="DateRequested" class="text-danger"></span>
+                </div>
+                <div id="names">Price per Gallon</div>
+                <div class="form-group">
+                    <input asp-for="PricePerGallon" class="form-control input-sm" readonly>
+                </div>
+
+                <div id="names">Total Price</div>
+                <div class="form-group">
+                    <input asp-for="TotalAmount" class="form-control input-sm" readonly>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-6">
+                        <input type="submit" value="Get Price" class="btn btn-info btn-block" id="getprice">
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6">
+                        <input type="button" value="Update" class="btn btn-info btn-block" id="update">
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
