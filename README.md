@@ -1,5 +1,38 @@
 # Fuel_Predictor
 To predict the rate of the fuel based on the following criteria: - Client Location (in-state or out-of-state) - Client history (existing customer with previous purchase or new) - Gallons requested - Company profit margin (%)
+
+## Assignment 3
+
+### Requirements and How to the Run the Project is same as for Assignment 2(Below)
+
+### Backend Technology
+* ASP.NET CORE
+* Entity Framework
+#### Testing
+* NUnit
+* Coverlet (For Code Coverage)
+
+### Points to Read
+1. The *FuelQuoteApp_p1.Tests* Project contains the Test file which contains Unit Test cases for the AccountController and ClientController files. Only these files contains the runnable code required for the project (In these files we excluded the functions which contains the hard coded and dummy data values).
+2. We added the project *FuelQuoteApp_p1.BusinessLayer*, it will be updated with the logics for all the modules in the upcoming assignments.
+3. The *FuelQuoteApp_p1/Models* Contains all the models and their validations, these are the models which were responsible for capturing the data for the backend.
+4. The *FuelQuoteApp_p1.EntModels* Contains the models which will be used for the data exchange between the frontend and Backend.
+5. The *FuelQuoteApp_p1/Controllers* has all the controllers for our project.
+
+
+### Code Coverage Reports
+* Client Controller
+   * ![alt text](https://github.com/sainarne15/Return_Order_Management/files/9079900/client_control_code_coverage.pdf)
+* Account Controller
+   * ![alt text](https://github.com/sainarne15/Return_Order_Management/files/9079904/account_Controller_code_coverage.pdf)
+
+### Contribution
+1. Apoorva Dhondi - Worked on 
+2. Sushma Gangavarapu - Worked on 
+3. Lakshmi Narasimha Sai Narne - Worked on 
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Assignment 2
 
 ### Requirements
